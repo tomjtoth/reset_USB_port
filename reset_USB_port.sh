@@ -7,11 +7,12 @@ else
   TARGET=$1
 fi
 
-if [ -z $TARGET ]; then 
+if [ -z $1 ]; then 
   clear
   lsusb
   echo "
   no target device provided, please select one e.g. Lenovo
+  or a bus number e.g. 2
   "
   exit 1
 fi
